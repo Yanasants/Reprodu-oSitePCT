@@ -1,0 +1,184 @@
+.cabecalho{
+    width:100%;
+}
+
+body{
+    font-family: 'Merriweather', serif;
+    font-size: 14px;
+    margin:0;
+}
+
+.dp-menu ul{
+    list-style-type: none;
+    display: inline;
+    margin-left:10%;
+}
+
+.dp-menu ul li{
+    display: inline;
+    position:relative;
+}
+
+.dp-menu ul li a{
+    display: inline-block;
+    text-decoration: none;
+    padding:10px;
+    color:black;
+    transition: 0.5s;
+    cursor:pointer;
+    border-left: 1px solid #000000;
+}
+
+.dp-menu ul li a:hover{
+    background-color: #cfe7f9;
+}
+
+/*SUBMENU*/
+.dp-menu ul ul{
+    display:none;
+    position:absolute;
+    left:0;
+    width: 300px;
+    text-align: center;
+}
+
+.dp-menu ul li:hover ul{
+    display:block;
+}
+
+/*
+.dp-menu ul ul li:last-child{
+    display:block;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom: 1px solid #000000;
+}
+*/
+.dp-menu ul ul li a{
+    display:block;
+    border-bottom: 1px solid #000000;
+    border-right: 1px solid #000000;
+    background-color: white;
+}
+
+.texto-boasvindas{
+    text-align: center;
+    font-size: 2em;
+    margin: 40 0 1em;
+    clear:left;
+}
+
+.img-boasvindas{
+    width:100%;
+    transition: 400ms;
+    margin-bottom: 5%;
+}
+
+.img-boasvindas:hover{
+    opacity: 0.8;
+}
+
+
+.texto-apresentacao{
+    font-size: 14px;
+    line-height: 1.5em;
+    margin-left: 15%;
+    width: 35%;
+    text-align: justify;
+    font-weight: bold;
+}
+
+
+.informes, .destaquesUfopa{
+    width:320px;
+    margin-right: 15%;
+    margin-top: 0;
+    float: right;
+}
+
+.informes li, .destaquesUfopa li{
+    display:inline-block;
+    width:100%;
+    margin-right: 0;
+    vertical-align: top;
+    padding: 10%;
+    padding-top: 2%;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #000000;
+}
+
+
+.informes li h2, .destaquesUfopa li h2{
+    text-align: center;
+    font-size: 14px;
+}
+
+.informes li a, .destaquesUfopa li a{
+    color: #000000;
+    display:inline-block;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+/*
+
+.slider{
+    list-style-type: none;
+    margin-left: 15%;
+    
+      deixa todos os itens da lista
+      na horizontal e todos com a
+      mesma largura
+
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+}
+
+.slider{
+	--total-items: 4;
+	width: calc(var(--total-items) * 100%);
+}
+
+.slider-show{
+    overflow: hidden;
+}
+
+.slider{
+    position: relative;
+    left: 0%;
+}
+
+.slider{
+    --selected-item: 0;
+    position: relative;
+    left: calc(var(--selected-item) * -100%);
+}
+
+.slide-controller:nth-child(1):checked ~ .slider-show .slider{--selected-item: 0;}
+.slide-controller:nth-child(2):checked ~ .slider-show .slider{--selected-item: 1;}
+.slide-controller:nth-child(3):checked ~ .slider-show .slider{--selected-item: 2;}
+.slide-controller:nth-child(4):checked ~ .slider-show .slider{--selected-item: 3;}
+
+.slide-controller:nth-child(4):checked ~ .slider-show .slider{--selected-item: 4;}
+.slide-controller:nth-child(5):checked ~ .slider-show .slider{--selected-item: 5;}
+.slide-controller:nth-child(6):checked ~ .slider-show .slider{--selected-item: 6;}
+.slide-controller:nth-child(7):checked ~ .slider-show .slider{--selected-item: 7;}
+
+.slide-controller:nth-child(8):checked ~ .slider-show .slider{--selected-item: 8;}
+.slide-controller:nth-child(9):checked ~ .slider-show .slider{--selected-item: 9;}
+.slide-controller:nth-child(10):checked ~ .slider-show .slider{--selected-item: 10;}
+.slide-controller:nth-child(11):checked ~ .slider-show .slider{--selected-item: 11;}
+
+.slide-controller:nth-child(12):checked ~ .slider-show .slider{--selected-item: 12;}
+.slide-controller:nth-child(13):checked ~ .slider-show .slider{--selected-item: 13;}
+.slide-controller:nth-child(14):checked ~ .slider-show .slider{--selected-item: 14;}
+.slide-controller:nth-child(15):checked ~ .slider-show .slider{--selected-item: 15;}
+
+.slider{
+    transition: left 0.4s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+}
+
+*/
