@@ -3,7 +3,8 @@
 }
 
 body{
-    font-family: 'Merriweather', serif;
+    /*font-family: 'Merriweather', serif;*/
+    font-family: 'Times New Roman', Times, serif;
     font-size: 14px;
     margin:0;
 }
@@ -71,7 +72,7 @@ body{
 .img-boasvindas{
     width:100%;
     transition: 400ms;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
 }
 
 .img-boasvindas:hover{
@@ -80,20 +81,24 @@ body{
 
 
 .texto-apresentacao{
-    font-size: 14px;
-    line-height: 1.5em;
+    font-size: 16px;
+    line-height: 1.2em;
     margin-left: 15%;
-    width: 35%;
+    width: 45%;
     text-align: justify;
-    font-weight: bold;
 }
 
 
+
 .informes, .destaquesUfopa{
+    float: right;
     width:320px;
     margin-right: 15%;
     margin-top: 0;
-    float: right;
+}
+
+.destaquesUfopa{
+    margin-top: 10%;
 }
 
 .informes li, .destaquesUfopa li{
@@ -112,7 +117,7 @@ body{
 
 .informes li h2, .destaquesUfopa li h2{
     text-align: center;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .informes li a, .destaquesUfopa li a{
@@ -120,6 +125,23 @@ body{
     display:inline-block;
     text-align: left;
     padding-bottom: 20px;
+    padding-top: 5px;
+    border-top: 1px solid #b4b4b4;
+    font-size: 16px;
+}
+
+.informes li a:nth-child(5){
+    color: red;
+}
+
+
+.Empresas-PosGrad{
+    margin-top: 5%;
+    margin-left: 15%;
+}
+
+.Empresas-PosGrad h2{
+    font-size: 16px;
 }
 
 /*
