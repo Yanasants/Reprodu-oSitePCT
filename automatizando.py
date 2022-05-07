@@ -1,2 +1,2 @@
-for i in range(4):
-    print(f".foto:nth-child({i})")
+for i in range(21):
+    print(f'<input type="radio" name="slider" id="item{i}">')

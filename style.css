@@ -37,7 +37,7 @@ body{
 /*SUBMENU*/
 .dp-menu ul ul{
     display:none;
-    position:absolute;
+    position: absolute;
     left:0;
     width: 300px;
     text-align: center;
@@ -134,16 +134,17 @@ body{
     color: red;
 }
 
-
 .Empresas-PosGrad{
     margin-top: 5%;
     margin-left: 15%;
+    width: 600px;
 }
 
 .Empresas-PosGrad h2{
     font-size: 16px;
 }
 
+/*
 .fotos-empresa{
     position: absolute;
     opacity: 0;
@@ -176,6 +177,93 @@ body{
 
 .fotos-empresa:nth-child(5){
     animation-delay: 12s;
+}
+*/
+
+input[type=radio]{
+    display: none;
+}
+
+.card{
+    position: absolute;
+    left:0;
+    right:0;
+    margin: auto;
+    cursor:pointer;
+    transition: transform 0.4s ease;
+}
+
+.container img{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.container{
+    margin-top: 5%;
+    margin-left: 30%;
+    transform-style: preserve-3d;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+
+#item1:checked ~ .cards #song2,
+#item2:checked ~ .cards #song3,
+#item3:checked ~ .cards #song4,
+#item4:checked ~ .cards #song5,
+#item5:checked ~ .cards #song6,
+#item6:checked ~ .cards #song7,
+#item7:checked ~ .cards #song8,
+#item8:checked ~ .cards #song9,
+#item9:checked ~ .cards #song10,
+#item10:checked ~ .cards #song11,
+#item11:checked ~ .cards #song12,
+#item12:checked ~ .cards #song13,
+#item13:checked ~ .cards #song14,
+#item14:checked ~ .cards #song15,
+#item15:checked ~ .cards #song16,
+#item16:checked ~ .cards #song17,
+#item17:checked ~ .cards #song18,
+#item18:checked ~ .cards #song19,
+#item19:checked ~ .cards #song20,
+#item20:checked ~ .cards #song1{
+    transform: translateX(60%) scale(0.8);
+    opacity: 0.4;
+    z-index: 1;
+}
+
+#item1:checked ~ .cards #song1,
+#item2:checked ~ .cards #song2,
+#item3:checked ~ .cards #song3,
+#item4:checked ~ .cards #song4,
+#item5:checked ~ .cards #song5,
+#item6:checked ~ .cards #song6,
+#item7:checked ~ .cards #song7,
+#item8:checked ~ .cards #song8,
+#item9:checked ~ .cards #song9,
+#item10:checked ~ .cards #song10,
+#item11:checked ~ .cards #song11,
+#item12:checked ~ .cards #song12,
+#item13:checked ~ .cards #song13,
+#item14:checked ~ .cards #song14,
+#item15:checked ~ .cards #song15,
+#item16:checked ~ .cards #song16,
+#item17:checked ~ .cards #song17,
+#item18:checked ~ .cards #song18,
+#item19:checked ~ .cards #song19,
+#item20:checked ~ .cards #song20{
+    transform: translateX(30%) scale(1);
+    opacity: 1;
+    z-index: 2;
 }
 
 /*
